@@ -1,0 +1,58 @@
+div.frame{
+    position: fixed;
+    background-color: grey;
+    height: 100%;
+    left: 23%;
+}
+
+input{
+    width: 30%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #cccbca;
+    border: none;
+    color: #1a1919;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.qrdisplay{
+    position: relative;
+    top: 23%;
+}
